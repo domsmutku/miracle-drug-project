@@ -1,5 +1,5 @@
 :root {
-  --brand-font: "DM Serif Text", serif;
+  --brand-font: "Crimson Pro", serif;
 }
 
 h1 {
@@ -16,8 +16,4 @@ h2 {
   font-size: 25px;
   margin: 0px 0px 20px 0px;
   text-align: center;
-}
-
-p {
-  font-family: "Rokkitt", serif;
 }
