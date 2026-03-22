@@ -1,0 +1,23 @@
+:root {
+  --brand-font: "DM Serif Text", serif;
+}
+
+h1 {
+  font-family: var(--brand-font);
+  font-weight: 400;
+  font-size: 70px;
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--brand-font);
+  font-weight: 400;
+  font-size: 25px;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+}
+
+p {
+  font-family: "Rokkitt", serif;
+}
