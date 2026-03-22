@@ -1,12 +1,24 @@
 :root {
   --brand-font: "Crimson Pro", serif;
+  --brand-color: #ab5f01;
+}
+
+.main-container {
+  width: 940px;
+  margin: auto;
+}
+
+.container {
+  width: 700px;
+  margin: auto;
 }
 
 h1 {
   font-family: var(--brand-font);
+  color: var(--brand-color);
   font-weight: 400;
   font-size: 70px;
-  margin: 0px 0px 0px 0px;
+  margin: 40px 0px 0px 0px;
   text-align: center;
 }
 
@@ -16,4 +28,69 @@ h2 {
   font-size: 25px;
   margin: 0px 0px 20px 0px;
   text-align: center;
+}
+
+img {
+  width: 120px;
+  display: block;
+  margin: auto;
+}
+
+button {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #ab5f01;
+  background: #e8e8e8;
+  transition: all 0.05s linear;
+  font-family: var(--brand-font);
+  margin: 35px 0px 0px 0px;
+}
+
+button:before,
+button:after {
+  content: "";
+  position: absolute;
+  background: #e8e8e8;
+  transition: all 0.2s linear;
+}
+
+button:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+}
+
+button:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+}
+
+button:hover {
+  cursor: crosshair;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+}
+
+button:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+
+button span {
+  font-size: 28px;
+  z-index: 3;
+  position: relative;
+  font-weight: 400;
+  line-height: 5px;
 }
